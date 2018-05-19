@@ -1,0 +1,11 @@
+
+#visor{
+  position: relative;
+  margin-top: 50px auto;
+  display: block;
+  clear: both;
+
+  height: 20px;
+  width:100%;
+  display: none;
+}

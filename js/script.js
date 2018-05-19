@@ -1,21 +1,20 @@
 
 
-
-// $(document).ready(function(){
-//   $('#buscador').on('change',function(){
-//     console.log($(this).val());
-//   });
-// });
+var recolectar =  [];
 
 function buscar(){
 
   var url = $('#buscador').val();
 
-  $.get(url,function(data){
+  $('#visor').load(url,function(){
 
-    console.log(data);
+    $(this).find('a').each(function(){
+      console.log($(this));
+
+    });
+
   });
 
 
 
-};
+}
