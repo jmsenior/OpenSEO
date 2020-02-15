@@ -10,6 +10,11 @@
     "48": "icons/os-icon.png"
   },
 
+   "browser_action": {
+      "default_popup": "index.html",
+      "default_icon": "icons/os-icon.png"
+    },
+
   "content_scripts": [
     {
       "matches": ["*://*/*"],
