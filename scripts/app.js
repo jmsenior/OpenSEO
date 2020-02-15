@@ -11,6 +11,7 @@ function DocumentLinks(){
 	var enlace = document.querySelectorAll('a');
 	//console.log(enlace);
 
+	//document.querySelector('#contenido');
 
 
 	//for( i=0; i<enlace.length; i++){
