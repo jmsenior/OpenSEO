@@ -1,2 +1,3 @@
 # OpenSEO
-Open Source SEO Tool
+
+Free Open Source SEO Tool
