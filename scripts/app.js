@@ -5,18 +5,20 @@ console.log('Hello');
 
 function DocumentLinks(){
 
-	var list = [];
+	var list = '';
 
 
 	var enlace = document.querySelectorAll('a');
 	//console.log(enlace);
 
-	//document.querySelector('#contenido');
+	var myWindow = window.open('','','resizable=yes,scrollbars=yes,width=1000,height=800');
+	
+	for( i=0; i<enlace.length; i++){
+		list += enlace[i].getAttribute('rel') + ' ' + enlace[i].href + '<br/>';
+	}
 
 
-	//for( i=0; i<enlace.length; i++){
-		//list.push[i];
-	//}
+	myWindow.document.body.innerHTML = list;
 
 
 }
