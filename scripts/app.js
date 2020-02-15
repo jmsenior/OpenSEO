@@ -1,0 +1,3 @@
+//scripts
+
+console.log('Hello');
