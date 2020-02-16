@@ -15,12 +15,26 @@
   //    "default_icon": "icons/os-icon.png"
   //  },
 
+  //"web_accesible_resources" : [ 
+ //   "css/style.css",
+  //  "templates/*" 
+  //],
+
+
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["/scripts/app.js"],
+      "js": ["/scripts/jquery.min.js","/scripts/script.js"],
+      "css": ["/css/style.css"],
       "all_frames": true
     }
-  ]
+  ],
+
+  "background": {
+    "scripts": ["/scripts/jquery.min.js","/scripts/background.js"],
+    "persintent": false
+  }
+
+
 
 }
