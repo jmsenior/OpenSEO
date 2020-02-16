@@ -21,6 +21,6 @@
 function InsertIframe(){
 	var pagina = document.querySelector('body');
 
-	pagina.insertAdjacentHTML('afterend', '<iframe></iframe>');
+	pagina.insertAdjacentHTML('afterend', '<iframe src="blocks/content-iframe.html"></iframe>');
 }
 InsertIframe();
