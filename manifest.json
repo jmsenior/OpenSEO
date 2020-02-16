@@ -10,17 +10,6 @@
     "48": "icons/os-icon.png"
   },
 
-  // "browser_action": {
-  //    "default_popup": "index.html",
-  //    "default_icon": "icons/os-icon.png"
-  //  },
-
-  //"web_accesible_resources" : [ 
- //   "css/style.css",
-  //  "templates/*" 
-  //],
-
-
   "content_scripts": [
     {
       "matches": ["*://*/*"],
