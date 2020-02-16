@@ -12,17 +12,17 @@ function DocumentLinks(){
 	
 	for( i=0; i<enlace.length; i++){
 
-		if( enlace[i].getAttribute('rel') == null ){
+		if( enlace[i].getAttribute('rel') == null ) {
 
-			list += '<p><span style="background:red;color:white;padding: 2px 5px;border-radius:10px;text-transform:uppercase;font-weight:bold">' + enlace[i].getAttribute('rel') + '</span>' + ' ' + enlace[i].href + '</p><br/>';
+			list += '<p><span style="background:green;color:white;padding: 2px 5px;border-radius:10px;text-transform:uppercase;font-weight:bold">DOFOLLOW</span>' + enlace[i].href + '</p><br/>';
 
 		}else if(enlace[i].getAttribute('rel') == 'nofollow'){
 
-			list += '<p><span style="background:black;color:white;padding: 2px 5px;border-radius:10px;text-transform:uppercase;font-weight:bold">' + enlace[i].getAttribute('rel') + '</span>' + ' ' + enlace[i].href + '</p><br/>';
+			list += '<p><span style="background:blue;color:white;padding: 2px 5px;border-radius:10px;text-transform:uppercase;font-weight:bold">' + enlace[i].getAttribute('rel') + '</span>' + ' ' + enlace[i].href + '</p><br/>';
 
 		}else{
-			
-			list += '<p><span style="background:green;color:white;padding: 2px 5px;border-radius:10px;text-transform:uppercase;font-weight:bold">' + enlace[i].getAttribute('rel') + '</span>' + ' ' + enlace[i].href + '</p><br/>';
+
+			list += '<p><span style="background:black;color:white;padding: 2px 5px;border-radius:10px;text-transform:uppercase;font-weight:bold">' + enlace[i].getAttribute('rel') + '</span>' + ' ' + enlace[i].href + '</p><br/>';
 
 		}
 	}
@@ -32,9 +32,7 @@ function DocumentLinks(){
 	myWindow.document.body.innerHTML = list;
 
 }
-
-
-
+insertarContenido();
 
 // insertar html
 
@@ -65,7 +63,6 @@ function insertarContenido(){
 // boton de mostrar enlaces
 $(document).ready(function(){
 
-	insertarContenido();
 
 	$('.btn-show-links').click(function(){
 		DocumentLinks();
